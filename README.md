@@ -2,6 +2,8 @@
 
 > Export i18n JSON from Storyblok dimensioned datasources.
 
+[![wakatime](https://wakatime.com/badge/github/mathix420/sb-datasource-to-i18n-json.svg)](https://wakatime.com/badge/github/mathix420/sb-datasource-to-i18n-json) [![npm version](https://badge.fury.io/js/sb-datasource-to-i18n-json.svg)](https://badge.fury.io/js/sb-datasource-to-i18n-json)
+
 Useful for utilizing existing i18n integrations on a frontend framework instead of fetching from the Storyblok API.
 
 Designed for a [nuxt-i18n](https://i18n.nuxtjs.org/) use case, but it's framework-agnostic.
