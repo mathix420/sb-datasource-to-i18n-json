@@ -1,75 +1,57 @@
 {
-  "name": "@mathix420/starter-ts",
-  "type": "module",
-  "private": false,
+  "name": "sb-datasource-to-i18n-json",
   "version": "0.0.1",
-  "description": "_description_",
   "author": "Arnaud Gissinger <agissing@student.42.fr>",
-  "license": "MIT",
-  "homepage": "https://github.com/mathix420/starter-ts#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mathix420/starter-ts.git"
-  },
-  "bugs": "https://github.com/mathix420/starter-ts/issues",
-  "keywords": [],
-  "sideEffects": false,
-  "exports": {
-    ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/index.mjs",
-      "require": "./dist/index.cjs"
-    }
-  },
-  "scripts": {
-    "build": "bun build src/index.ts --outdir dist/ --sourcemap=external --target=node --splitting",
-    "lint": "eslint ./src/",
-    "lintfix": "eslint ./src/ --fix",
-    "prepare": "husky install",
-    "semantic-release": "semantic-release",
-    "test:watch": "bun test --watch",
-    "test": "bun test --coverage",
-    "typecheck": "tsc --noEmit"
-  },
-  "typesVersions": {
-    "*": {
-      "*": [
-        "./dist/*",
-        "./dist/index.d.ts"
-      ]
-    }
-  },
-  "files": [
-    "dist"
-  ],
-  "main": "./dist/index.mjs",
-  "module": "./dist/index.mjs",
-  "types": "./dist/index.d.ts",
-  "devDependencies": {
-    "@ryansonshine/commitizen": "^4.2.8",
-    "@ryansonshine/cz-conventional-changelog": "^3.3.4",
-    "@typescript-eslint/eslint-plugin": "^6.10.0",
-    "@typescript-eslint/parser": "^6.10.0",
-    "bun-types": "latest",
-    "conventional-changelog-conventionalcommits": "^7.0.2",
-    "eslint": "^8.53.0",
-    "eslint-config-prettier": "^9.0.0",
-    "eslint-plugin-prettier": "^5.0.1",
-    "husky": "^8.0.3",
-    "prettier": "^3.0.3",
-    "semantic-release": "^22.0.7"
-  },
-  "peerDependencies": {
-    "typescript": "^5.0.0"
+    "url": "git+https://github.com/mathix420/sb-datasource-to-i18n-json.git"
   },
   "config": {
     "commitizen": {
       "path": "./node_modules/@ryansonshine/cz-conventional-changelog"
     }
   },
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "devDependencies": {
+    "@ryansonshine/commitizen": "^4.2.8",
+    "@ryansonshine/cz-conventional-changelog": "^3.3.4",
+    "@typescript-eslint/eslint-plugin": "^6.11.0",
+    "@typescript-eslint/parser": "^6.11.0",
+    "bun-types": "latest",
+    "conventional-changelog-conventionalcommits": "^7.0.2",
+    "eslint": "^8.53.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.1",
+    "husky": "^8.0.3",
+    "prettier": "^3.1.0",
+    "semantic-release": "^22.0.7"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "bin": {
+    "sb-i18n": "./bin/index.mjs"
+  },
+  "bugs": "https://github.com/mathix420/sb-datasource-to-i18n-json/issues",
+  "description": "Export i18n JSON from Storyblok dimensioned datasources",
+  "files": [
+    "bin",
+    "dist"
+  ],
+  "homepage": "https://github.com/mathix420/sb-datasource-to-i18n-json#readme",
+  "keywords": [],
+  "license": "MIT",
   "lint-staged": {
     "*.ts": "eslint --cache --cache-location .eslintcache --fix"
   },
+  "private": false,
   "release": {
     "branches": [
       "master"
@@ -114,5 +96,32 @@
       "@semantic-release/npm",
       "@semantic-release/github"
     ]
+  },
+  "scripts": {
+    "build": "bun build src/index.ts --outdir dist/ --sourcemap=external --target=node --splitting",
+    "lint": "eslint ./src/",
+    "lintfix": "eslint ./src/ --fix",
+    "prepare": "husky install",
+    "semantic-release": "semantic-release",
+    "test:watch": "bun test --watch",
+    "test": "bun test --coverage",
+    "typecheck": "tsc --noEmit"
+  },
+  "sideEffects": false,
+  "type": "module",
+  "types": "./dist/index.d.ts",
+  "typesVersions": {
+    "*": {
+      "*": [
+        "./dist/*",
+        "./dist/index.d.ts"
+      ]
+    }
+  },
+  "dependencies": {
+    "@storyblok/js": "^2.3.0",
+    "chalk": "^5.3.0",
+    "commander": "^11.1.0",
+    "isomorphic-fetch": "^3.0.0"
   }
 }
