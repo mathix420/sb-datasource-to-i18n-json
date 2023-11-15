@@ -55,6 +55,13 @@ npm i
 npm run sync-i18n
 ```
 
+### Environment variables
+
+You can use environment variables to define Storyblok access token and region.
+
+- `SB_ACCESS_TOKEN`, overriten by `-t, --token`
+- `SB_REGION`, overriten by `-r, --region`
+
 ## Requirements
 
 For this script to work, you need to setup a datasource following these rules:
