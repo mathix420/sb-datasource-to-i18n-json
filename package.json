@@ -1,6 +1,6 @@
 {
   "name": "sb-datasource-to-i18n-json",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "author": "Arnaud Gissinger <agissing@student.42.fr>",
   "repository": {
     "type": "git",
@@ -16,6 +16,8 @@
   "devDependencies": {
     "@ryansonshine/commitizen": "^4.2.8",
     "@ryansonshine/cz-conventional-changelog": "^3.3.4",
+    "@semantic-release/github": "^9.2.3",
+    "@semantic-release/npm": "^11.0.1",
     "@typescript-eslint/eslint-plugin": "^6.11.0",
     "@typescript-eslint/parser": "^6.11.0",
     "bun-types": "latest",
