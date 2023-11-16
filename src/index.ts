@@ -46,7 +46,9 @@ for (const lang of langs) {
         version: "draft",
         datasource: options.datasource,
         dimension: lang,
+        per_page: 1000,
     });
+    // TODO: paginate
 
     for (const entry of datasource_entries) {
         // Instead of doing a different api call to get default lang,
