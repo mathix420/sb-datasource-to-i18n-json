@@ -20,7 +20,6 @@ export async function paginate<T>(
     while (lastTotal >= limit * page) {
         if (page > 1) await sleep(coolDown);
         const { data, total } = await callback(limit, page);
-        console.log(data);
         lastTotal = total;
         res.push(...data);
         page++;
