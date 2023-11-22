@@ -49,7 +49,14 @@
     "dist"
   ],
   "homepage": "https://github.com/mathix420/sb-datasource-to-i18n-json#readme",
-  "keywords": [],
+  "keywords": [
+    "storyblok",
+    "i18n",
+    "sb",
+    "cli",
+    "node",
+    "bun"
+  ],
   "license": "MIT",
   "lint-staged": {
     "*.ts": "eslint --cache --cache-location .eslintcache --fix"
