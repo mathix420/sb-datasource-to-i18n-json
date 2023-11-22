@@ -43,7 +43,7 @@
     "sb-i18n": "./bin/index.mjs"
   },
   "bugs": "https://github.com/mathix420/sb-datasource-to-i18n-json/issues",
-  "description": "Export i18n JSON from Storyblok dimensioned datasources",
+  "description": "Convert Storyblok Datasource to i18n JSON",
   "files": [
     "bin",
     "dist"

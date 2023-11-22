@@ -16,7 +16,19 @@ program
     .option("-d, --datasource <slug>", "slug of the target datasource")
     .option("-l, --default-lang <lang>", "lang of the default dimension")
     .option("-o, --outfile <path>", "filename of the JSON output", "i18n.json")
-    .option("--spacing <nb>", "JSON format spacing", parseInt, 4)
+    .option(
+        "--limit <count>",
+        "max results per storyblok API requests",
+        parseInt,
+        1000,
+    )
+    .option(
+        "--cool-down <ms>",
+        "time to wait between paginations",
+        parseInt,
+        400,
+    )
+    .option("--spacing <count>", "JSON format spacing", parseInt, 4)
     .option("-s, --silent", "verbose setting", false);
 
 program.parse(argv);

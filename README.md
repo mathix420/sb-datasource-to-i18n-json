@@ -1,6 +1,6 @@
 # sb-datasource-to-i18n-json
 
-> Export i18n JSON from Storyblok dimensioned datasources.
+> Convert Storyblok Datasource to i18n JSON.
 
 [![wakatime](https://wakatime.com/badge/github/mathix420/sb-datasource-to-i18n-json.svg)](https://wakatime.com/badge/github/mathix420/sb-datasource-to-i18n-json) [![npm version](https://badge.fury.io/js/sb-datasource-to-i18n-json.svg)](https://badge.fury.io/js/sb-datasource-to-i18n-json)
 
